@@ -25,4 +25,3 @@ def test_get_output(test_gateOR):
 
     test_gateOR._iPins[0].set_input(False)
     assert test_gateOR.get_output() is False
-    

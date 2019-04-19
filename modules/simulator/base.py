@@ -8,18 +8,20 @@ class LogicSimulator(object):
     def __init__(self):
         """ Init logic simulator.
         Attributes:
-            name (str): The logic simulator name.
-            __circuit (list): private variable, circuit device.
-            __iPins (list): private variable, input pins.
-            __oPins (list): private variable, output pins.
-            has_input(bool): have input pins.
-            __factory (DeviceFactory): private variable, create devices.
+            name (str):                 The logic simulator name.
+            __circuit (list):           private variable, circuit device.
+            __iPins (list):             private variable, input pins.
+            __oPins (list):             private variable, output pins.
+            has_input (bool):           have input pins.
+            input_length (int):         input pin length.
+            __factory (DeviceFactory):  private variable, create devices.
         """
         self.name = "Logic simulator"
         self.__circuit = []
         self.__iPins = []
         self.__oPins = []
         self.has_input = False
+        self.input_length = 0
         self.__factory = DeviceFactory()
 
     @input_required
@@ -157,3 +159,4 @@ class LogicSimulator(object):
             raise Exception("{} context not valid".format(file_path))
 
         self.has_input = True
+        self.input_length = len(self.__iPins)
