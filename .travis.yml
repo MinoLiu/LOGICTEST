@@ -1,3 +1,4 @@
+dist: xenial
 language: python
 
 python:
@@ -6,7 +7,7 @@ python:
 install:
   - "pip install pipenv"
   - "pip install codecov"
-  - "pipenv sync"
+  - "pipenv sync -d"
 
 script: "python -m pytest --cov=./ --cov-report term-missing --cov-config=.coveragerc ./tests"
 
