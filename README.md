@@ -1,4 +1,4 @@
-# Logic circuit simulator
+# LOGICTEST
 
 [![Build Status](https://travis-ci.com/Sean2525/Logic-circuit-simulator.svg?branch=master)](https://travis-ci.com/Sean2525/Logic-circuit-simulator) [![codecov](https://codecov.io/gh/Sean2525/Logic-circuit-simulator/branch/master/graph/badge.svg)](https://codecov.io/gh/Sean2525/Logic-circuit-simulator) ![GitHub](https://img.shields.io/github/license/sean2525/Logic-circuit-simulator.svg?style=popout) [![python3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release)
 
